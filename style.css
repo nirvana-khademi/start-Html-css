@@ -1,0 +1,29 @@
+desc{
+    color: blue;
+}
+
+body{
+    background-color: grey;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+button{
+    background-color: coral;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    
+    
+}
+
+
+button:hover{
+    background-color: brown;
+
+}
+
+button:active{
+    transform: scale(0.8);
+}
