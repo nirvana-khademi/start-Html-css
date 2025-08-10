@@ -27,3 +27,12 @@ button:hover{
 button:active{
     transform: scale(0.8);
 }
+
+
+#n2 {
+    border: 5px dotted blue;
+    width: 80px;
+    text-align: center;
+    margin-top: 0px;
+    margin-left: 500px;
+}
