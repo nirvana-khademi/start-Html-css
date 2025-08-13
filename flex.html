@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex testing</title>
+    <style>
+
+        /* .container{
+            border: 5px , black , solid;
+            padding: 20px;
+        } */
+
+        .container1 div , .container2 div{
+            border: 2px , rgb(100, 91, 221) , solid;
+            padding: 10px;
+            margin: 2px;
+        }
+
+        .container1{
+            display: flex;
+            margin: 10px;
+            margin-bottom: 20px;
+            /* align-items: flex-start;
+            align-items: flex-end;
+            align-items: center; */
+
+            /* diffult is: */
+            align-items: stretch;
+
+            /* flex-direction: column; */
+        }
+
+        .container2{
+            display: flex;
+            /* diffult: 
+            justify-content: flex-start;
+            justify-content: flex-end;
+            justify-content: center;
+            justify-content: space-between;*/
+            justify-content: space-around;
+
+        }
+
+        .box1{
+            flex: 2;
+            order: 2;
+        }
+        .box2{
+            flex: 1;
+            order: 1;
+        }
+        .box3{
+            flex: 1;
+            order: 3;
+        }
+        .box4, .box5, .box6{
+            width: 30%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container1">
+        <div class="box1">
+            <h3>box number one</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui neque, totam hic cum
+                ipsum dolor sit amet consectetur adipisicing 
+            </p>
+        </div>
+        <div class="box2">
+            <h3>box number two</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing
+                ipsum dolor sit amet consectetur adipisicing  elit. Qui neque, totam hic cum</p>
+        </div>
+        <div class="box3">
+            <h3>box number three</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur
+                ipsum dolor sit amet consectetur adipisicing  adipisicing elit. Qui neque, totam hic cum</p>
+        </div>
+    </div>
+
+    <div class="container2">
+        <div class="box4">
+            <h3>box number four</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui neque, totam hic cum
+                ipsum dolor sit amet consectetur adipisicing 
+            </p>
+        </div>
+        <div class="box5">
+            <h3>box number five</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing
+                ipsum dolor sit amet consectetur adipisicing  elit. Qui neque, totam hic cum</p>
+        </div>
+        <div class="box6">
+            <h3>box number six</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur
+                ipsum dolor sit amet consectetur adipisicing  adipisicing elit. Qui neque, totam hic cum</p>
+        </div>
+    </div>
+
+</body>
+</html>
