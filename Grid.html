@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid testing</title>
+    <style>
+        .g-container{
+            display: grid;
+            grid-template-columns: 40% 40% 20%;
+        }
+        .g-container div{
+            background-color: #aaa;
+            padding: 15px;
+            margin: 20px;
+        }
+
+    .g-container div:nth-child(odd){
+        background-color: #ccc;
+    }
+    </style>
+</head>
+<body>
+    <div class="g-container">
+        <div>Lorem ipsum, dolor sit amet consectetur adipisicing
+            elit. Provident vel nam,earum similique unde atque
+            ipsam velit doloremque ducimus voluptatum delectus 
+            excepturi saepe iure illo beatae dolorum harum.
+        </div>
+        <div>Lorem ipsum, dolor sit amet consectetur adipisicing
+            elit. Provident vel nam,earum similique unde atque
+            ipsam velit doloremque ducimus voluptatum delectus 
+            excepturi saepe iure illo beatae dolorum harum.
+        </div>
+        <div>Lorem ipsum, dolor sit amet consectetur adipisicing
+            elit. Provident vel nam,earum similique unde atque
+            ipsam velit doloremque ducimus voluptatum delectus 
+            excepturi saepe iure illo beatae dolorum harum.
+        </div>
+    </div>
+    
+</body>
+</html>
